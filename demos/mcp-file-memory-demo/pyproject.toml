@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-file-memory-demo"
+version = "0.1.0"
+description = "A small MCP file-memory server demo with permission checks and provenance metadata."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
